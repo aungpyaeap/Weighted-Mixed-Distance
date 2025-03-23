@@ -7,3 +7,5 @@ $\mathfrak{X} = \{x_i \in \mathbb{R}^m \mid i=1,2,\cdots,n\}$, $m:=m_R + m_C$ be
 ![Weighted Mixed Distance](wmd-distance-formula.svg)
 
 where $w_R$ is the weight of numerical features and $w_C$ is the weight of categorical features.
+
+![WMD workflow](wmd-workflow.png)
