@@ -8,4 +8,4 @@ $\mathfrak{X} = \{x_i \in \mathbb{R}^m \mid i=1,2,\cdots,n\}$, $m:=m_R + m_C$ be
 
 where $w_R$ is the weight of numerical features and $w_C$ is the weight of categorical features.
 
-![WMD workflow](wmd-workflow.png)
+![WMD workflow](wmd-workflow.PNG)
