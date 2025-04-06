@@ -13,6 +13,7 @@ d_{ijk} :=
 1 &amp; \text{if $x_{ik} \neq x_{jk}$ (categorical)}
 \end{cases}
 " />
+
 where $w_R$ is the weight of numerical features and $w_C$ is the weight of categorical features.
 
 ## References
