@@ -5,9 +5,14 @@ A Distance Metric for Clustering Mixed Data Using Graph-Based Feature Influence 
 
 Let $\mathfrak{X}^{n \times m}, m:=m_R + m_C$ be a mixed dataset. The Weighted Mixed Distance (WMD) metric is defined as
 
-$\text{WMD}(x_i,x_j) = \frac{1}{m} \left[ w_R \times \sum_{k=1}^{m_R} d_{ijk} + w_C \times \sum_{k=1}^{m_C} d_{ijk} \right]$
+$\text{WMD}(x_i,x_j) = \frac{1}{m} w_R \times \sum_{k=1}^{m_R} d_{ijk} + w_C \times \sum_{k=1}^{m_C} d_{ijk}]$
 
-where $d_{ij}:=\sqrt{1 - \frac{x_i \cdot x_j}{\|x_i\| \|x_j\|}}$ if $x_{i}$ and $x_{j}$ are numerical and  $d_{ijk}:=\mathbb{I}(x_{i} \neq x_{j})$ if $x_{i}$ and $x_{j}$ are categorical, $w_R$ is the weight of numerical features and $w_C$ is the weight of categorical features.
+where $d_{ijk}:=\sqrt{1 - \frac{x_i \cdot x_j}{\|x_i\| \|x_j\|}}$ if $x_{i}$ and $x_{j}$ are numerical and $d_{ijk}:=\mathbb{I}(x_{i} \neq x_{j})$ if $x_{i}$ and $x_{j}$ are categorical, $w_R$ is the weight of numerical features and $w_C$ is the weight of categorical features.
+
+WMD satisfies the following conditions for any three data points $(x_i,x_j,x_k)$.
+1. $\forall x_i \neq x_j, d(x_i,x_j) > 0, d(x_i,x_i) = 0$
+2. $d(x_i,x_j) = d(x_j,x_i)$
+3. $\forall x_k, d(x_i, x_j) \leq d(x_i, x_k) + d(x_k, x_j)$
 
 ## References
 1. [Von Luxburg, U. (2007). A tutorial on spectral clustering. Statistics and computing, 17, 395-416.](https://link.springer.com/article/10.1007/s11222-007-9033-z)
