@@ -1,6 +1,6 @@
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)](https://github.com/dwyl/esta/issues)
 
-# Weighted Mixed Distance
+# Weighted Mixed Distance [`[paper]`](https://github.com/aungpyaeap)
 A Distance Metric for Clustering Mixed Data Using Graph-Based Feature Influence Balancing Approach.
 
 Let $\mathfrak{X}^{n \times m}, m:=m_R + m_C$ be a mixed dataset. The Weighted Mixed Distance (WMD) metric is defined as
