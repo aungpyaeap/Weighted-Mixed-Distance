@@ -1,4 +1,4 @@
-function D = GowerDistance(data)
+function D = gower(data)
 [n, p] = size(data);
 D = zeros(n, n);
 

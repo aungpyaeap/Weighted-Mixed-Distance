@@ -3,8 +3,8 @@ clc; clear; close all;
 dataPoints = readtable('synthetic-mixed-sample.csv', VariableNamingRule='preserve');
 
 epsilon = 0.5;
-[weightNumerical, weightCategorical] = FindWeights(dataPoints, epsilon);
+[weightNumerical, weightCategorical] = getweights(dataPoints, epsilon);
 
-DIST = WeightedMixedDistance(dataPoints,weightNumerical, weightCategorical);
+DIST = wmd(dataPoints,weightNumerical, weightCategorical);
 
 disp(DIST);

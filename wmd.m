@@ -1,4 +1,4 @@
-function distanceMatrix = WeightedMixedDistance(X, weightNumerical, weightCategorical)
+function distanceMatrix = wmd(X, weightNumerical, weightCategorical)
 
 n = height(X);
 m = width(X);
