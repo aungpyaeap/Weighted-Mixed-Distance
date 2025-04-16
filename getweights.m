@@ -30,7 +30,7 @@ D = diag(sum(Adj,2));
 L = D - Adj;
 
 % Encode table to find LS
-X_encoded = array2table(EncodeCategoricalFeatures(X));
+X_encoded = array2table(encoder(X));
 
 % Make a column vector of ones
 ones_vector = ones(size(X_encoded, 1), 1);
@@ -85,6 +85,6 @@ weightCategorical = mean(LS_Table.R_Normalized_LS(categorical_rows));
 
 % Display the results
 disp(['W_R for numerical features: ', num2str(weightNumerical)]);
-disp(['W_C categorical features: ', num2str(weightCategorical)]);
+disp(['W_C for categorical features: ', num2str(weightCategorical)]);
 
 end

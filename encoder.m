@@ -1,4 +1,4 @@
-function encodedX = EncodeCategoricalFeatures(X)
+function encodedX = encoder(X)
 varNames = X.Properties.VariableNames;
 encodedVars = cell(size(X, 2), 1);
 
