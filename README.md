@@ -27,6 +27,8 @@ disp(DIST);
 ## Experiment Results
 ![Single linkage clustering](Experiment-results/heatmap_single_linkage.png)
 ![Complete linkage clustering](Experiment-results/heatmap_complete_linkage.png)
+![Average linkage clustering](Experiment-results/heatmap_average_linkage.png)
+![Weighted linkage clustering](Experiment-results/heatmap_weighted_linkage.png)
 
 ## Citation
 Pyae, A., Low, Y. C., & Chua, H. N. (2024, August). A Combined Distance Metric Approach with Weight Adjustment For Improving Mixed Data Clustering Quality. In 2024 IEEE International Conference on Artificial Intelligence in Engineering and Technology (IICAIET) (pp. 183-188). IEEE.
