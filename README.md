@@ -17,7 +17,7 @@ WMD satisfies the following conditions for any three data points $(x_i,x_j,x_k)$
 ## Usage
 MATLAB code `wmd(X, W_R, W_C)` function returns $n \times n$ symmetric matrix.
 ```m
-dataPoints = readtable('synthetic-mixed-sample.csv', VariableNamingRule='preserve');
+dataPoints = readtable('medical-insurance.csv', VariableNamingRule='preserve');
 epsilon = 0.5;
 [weightNumerical, weightCategorical] = getweights(dataPoints, epsilon);
 DIST = wmd(dataPoints,weightNumerical, weightCategorical);

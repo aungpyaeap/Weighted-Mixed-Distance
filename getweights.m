@@ -7,26 +7,20 @@ end
 num_features = width(X);
 LS = zeros(num_features, 1);
 
-% Compute Gower disance
+% Gower disance
 dist = gower(X);
 
-% Convert Gower similarity
+% Transform to Gower similarity
 S = 1 - dist;
 
-minSimilarity = min(S(S > 0));
-maxSimilarity = max(S(S > 0));
-fprintf('Minimum similarity (excluding zero): %.4f\n', minSimilarity);
-fprintf('Maximum similarity (excluding zero): %.4f\n', maxSimilarity);
-fprintf('Average similarity: %.4f\n', (minSimilarity + maxSimilarity) / 2);
-
-% Construct adjacency matrix using epsilon
+% Adjacency matrix using epsilon
 Adj = S;
 Adj(Adj<epsilon) = 0;
 
-% Construct degree matrix
+% Degree matrix
 D = diag(sum(Adj,2));
 
-% Construct Laplacian matrix
+% Laplacian matrix
 L = D - Adj;
 
 % Encode table to find LS
@@ -50,7 +44,7 @@ for i = 1:size(X_encoded, 2)
 
 end
 
-% Loop through each feature to determine its type
+% Loop through each feature to determine its feature type
 is_numerical = cell(num_features, 1);
 for i = 1:num_features
     feature_name = X.Properties.VariableNames{i};
@@ -65,7 +59,7 @@ end
 Feature_Index = (1:num_features)';
 LS_Table = table(Feature_Index, is_numerical, LS, 'VariableNames', {'Feature_Index', 'Is_Numerical', 'LS'});
 
-% Normalize the Laplacian Scores
+% Inverse normalize LS
 min_ls = min(LS);
 max_ls = max(LS);
 normalized_ls = (LS - min_ls) / (max_ls - min_ls);
@@ -84,7 +78,7 @@ categorical_rows = strcmp(LS_Table.Is_Numerical, 'False');
 weightCategorical = mean(LS_Table.R_Normalized_LS(categorical_rows));
 
 % Display the results
-disp(['W_R for numerical features: ', num2str(weightNumerical)]);
-disp(['W_C for categorical features: ', num2str(weightCategorical)]);
+fprintf('W_R for numerical features: %.4f \n', weightNumerical);
+fprintf('W_C for categorical features: %.4f \n', weightCategorical);
 
 end
