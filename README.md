@@ -24,6 +24,13 @@ DIST = wmd(dataPoints,weightNumerical, weightCategorical);
 disp(DIST);
 ```
 
+## Sample dataset source
+**Medical Insurance Dataset (Public)**  
+Used for weighted mixed distance computation and clustering.
+- 🔗 [Dataset on Mendeley Data](https://data.mendeley.com/datasets/69xxkwghy4/1)
+- 👤 Contributor: Prakash M C Chinnathambi, SRM University
+- 📄 License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
+
 ## Citation
 Pyae, A., Low, Y. C., & Chua, H. N. (2024, August). A Combined Distance Metric Approach with Weight Adjustment For Improving Mixed Data Clustering Quality. In 2024 IEEE International Conference on Artificial Intelligence in Engineering and Technology (IICAIET) (pp. 183-188). IEEE.
 ```bibtex
