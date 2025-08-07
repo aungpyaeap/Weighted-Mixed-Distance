@@ -24,6 +24,10 @@ DIST = wmd(dataPoints,weightNumerical, weightCategorical);
 disp(DIST);
 ```
 
+## Experiment Results
+![Single linkage clustering](Experiment-results/heatmap_single_linkage.png)
+![Complete linkage clustering](Experiment-results/heatmap_complete_linkage.png)
+
 ## Citation
 Pyae, A., Low, Y. C., & Chua, H. N. (2024, August). A Combined Distance Metric Approach with Weight Adjustment For Improving Mixed Data Clustering Quality. In 2024 IEEE International Conference on Artificial Intelligence in Engineering and Technology (IICAIET) (pp. 183-188). IEEE.
 ```bibtex
@@ -40,12 +44,6 @@ Pyae, A., Low, Y. C., & Chua, H. N. (2024, August). A Combined Distance Metric A
 }
 ```
 
-## Sample dataset source
-**Medical Insurance Dataset (Public)**  
-Used for weighted mixed distance computation and clustering.
-- [Dataset on Mendeley Data](https://data.mendeley.com/datasets/69xxkwghy4/1)
-- Contributor: Prakash M C Chinnathambi, SRM University
-- License: [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
 ## References
 1. [Von Luxburg, U. (2007). A tutorial on spectral clustering. Statistics and computing, 17, 395-416.](https://link.springer.com/article/10.1007/s11222-007-9033-z)
