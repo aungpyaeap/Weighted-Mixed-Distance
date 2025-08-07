@@ -46,24 +46,24 @@ Pyae, A., Low, Y. C., & Chua, H. N. (2024, August). A Combined Distance Metric A
 ```
 
 ## References
-- R. Scitovski, K. Sabo, F. Martínez-Álvarez, and Š. Ungar, *Cluster analysis and applications*, 2021 ed. Cham, Switzerland: Springer Nature, 2022.
-- J. C. Gower, “A general coefficient of similarity and some of its properties,” *Biometrics*, pp. 857–871, 1971.
-- M. Van de Velden, A. Iodice D'Enza, and A. Markos, “Distance-based clustering of mixed data,” *Wiley Interdiscip. Rev. Comput. Stat.*, vol. 11, no. 3, p. e1456, 2019.
-- H. Jia, Y.-m. Cheung, and J. Liu, “A new distance metric for unsupervised learning of categorical data,” *IEEE Trans. Neural Netw. Learn. Syst.*, vol. 27, no. 5, pp. 1065–1079, 2015.
-- J. Ji, R. Li, W. Pang, F. He, G. Feng, and X. Zhao, “A Multi-View Clustering Algorithm for Mixed Numeric and Categorical Data,” *IEEE Access*, vol. 9, pp. 24913–24924, 2021.
-- Z. Ning, J. Chen, J. Huang, U. J. Sabo, Z. Yuan, and Z. Dai, “WeDIV--an improved k-means clustering algorithm with a weighted distance and a novel internal validation index,” *Egypt. Inform. J.*, vol. 23, no. 4, pp. 133–144, 2022.
-- U. Von Luxburg, “A tutorial on spectral clustering,” *Stat. Comput.*, vol. 17, pp. 395–416, 2007.
-- S. Miyamoto, *Theory of agglomerative hierarchical clustering*, 2022 ed. Singapore, Singapore: Springer, 2022.
-- L. A. Belanche Muñoz and J. Hernández González, “Similarity networks for heterogeneous data,” in *Proc. ESANN 2012*, Bruges, Belgium, pp. 215–220, Apr. 2012.
-- L. AbdAllah and I. Shimshoni, “K-means over incomplete datasets using mean Euclidean distance,” in *Proc. Int. Conf. Mach. Learn. Data Mining Pattern Recogn.*, pp. 113–127, 2016.
-- D. R. Wilson and T. R. Martinez, “Improved heterogeneous distance functions,” *J. Artif. Intell. Res.*, vol. 6, pp. 1–34, 1997.
-- S. Alelyani, J. Tang, and H. Liu, “Feature selection for clustering: A review,” in *Data Clustering*, pp. 29–60, Chapman and Hall/CRC, 2018.
-- L. Zhu, L. Miao, and D. Zhang, “Iterative Laplacian score for feature selection,” in *Proc. Pattern Recogn. CCPR 2012*, Beijing, China, pp. 80–87, Sep. 2012.
-- A. Diop, N. El Malki, M. Chevalier, A. Péninou, and O. Teste, “Impact of similarity measures on clustering mixed data,” in *Proc. 34th Int. Conf. Sci. Stat. Database Manag.*, pp. 1–12, 2022.
-- N. Tomašev and M. Radovanović, “Clustering evaluation in high-dimensional data,” in *Unsupervised Learning Algorithms*, pp. 71–107, Springer, 2016.
-- P. J. Rousseeuw, “Silhouettes: a graphical aid to the interpretation and validation of cluster analysis,” *J. Comput. Appl. Math.*, vol. 20, pp. 53–65, 1987.
-- C. Hennig, M. Meila, F. Murtagh, and R. Rocci, *Handbook of cluster analysis*, 1st ed. Chapman and Hall/CRC, 2015.
-- A. Pyae, Y.-C. Low, and H. N. Chua, “A Combined Distance Metric Approach with Weight Adjustment For Improving Mixed Data Clustering Quality,” in *Proc. IEEE Int. Conf. Artif. Intell. Eng. Technol. (IICAIET)*, pp. 183–188, 2024.
-- The MathWorks, Inc., *Statistics and Machine Learning Toolbox*, version 24.2.0 (R2024b), Natick, Massachusetts, United States, 2025.
-- A. José-García and W. Gómez-Flores, “CVIK: A Matlab-based cluster validity index toolbox for automatic data clustering,” *SoftwareX*, vol. 22, p. 101359, 2023.
-- A. Ahmad and S. S. Khan, “Survey of state-of-the-art mixed data clustering algorithms,” *IEEE Access*, vol. 7, pp. 31883–31902, 2019.
+- Scitovski, R., Sabo, K., Martínez-Álvarez, F., & Ungar, Š. (2022). *Cluster analysis and applications* (2021 ed.). Springer Nature.
+- Gower, J. C. (1971). A general coefficient of similarity and some of its properties. *Biometrics*, *27*, 857–871.
+- Van de Velden, M., Iodice D'Enza, A., & Markos, A. (2019). Distance-based clustering of mixed data. *Wiley Interdisciplinary Reviews: Computational Statistics*, *11*(3), e1456.
+- Jia, H., Cheung, Y.-m., & Liu, J. (2015). A new distance metric for unsupervised learning of categorical data. *IEEE Transactions on Neural Networks and Learning Systems*, *27*(5), 1065–1079.
+- Ji, J., Li, R., Pang, W., He, F., Feng, G., & Zhao, X. (2021). A multi-view clustering algorithm for mixed numeric and categorical data. *IEEE Access*, *9*, 24913–24924.
+- Ning, Z., Chen, J., Huang, J., Sabo, U. J., Yuan, Z., & Dai, Z. (2022). WeDIV—An improved k-means clustering algorithm with a weighted distance and a novel internal validation index. *Egyptian Informatics Journal*, *23*(4), 133–144.
+- Von Luxburg, U. (2007). A tutorial on spectral clustering. *Statistics and Computing*, *17*, 395–416.
+- Miyamoto, S. (2022). *Theory of agglomerative hierarchical clustering* (2022 ed.). Springer.
+- Belanche Muñoz, L. A., & Hernández González, J. (2012). Similarity networks for heterogeneous data. In *ESANN 2012: The 20th European Symposium on Artificial Neural Networks, Computational Intelligence and Machine Learning* (pp. 215–220). I6doc.com.
+- AbdAllah, L., & Shimshoni, I. (2016). K-means over incomplete datasets using mean Euclidean distance. In *International Conference on Machine Learning and Data Mining in Pattern Recognition* (pp. 113–127). Springer.
+- Wilson, D. R., & Martinez, T. R. (1997). Improved heterogeneous distance functions. *Journal of Artificial Intelligence Research*, *6*, 1–34.
+- Alelyani, S., Tang, J., & Liu, H. (2018). Feature selection for clustering: A review. In *Data Clustering* (pp. 29–60). Chapman and Hall/CRC.
+- Zhu, L., Miao, L., & Zhang, D. (2012). Iterative Laplacian score for feature selection. In *Pattern Recognition: Chinese Conference, CCPR 2012, Beijing, China, September 24–26, 2012. Proceedings 5* (pp. 80–87). Springer.
+- Diop, A., El Malki, N., Chevalier, M., Péninou, A., & Teste, O. (2022). Impact of similarity measures on clustering mixed data. In *Proceedings of the 34th International Conference on Scientific and Statistical Database Management* (pp. 1–12).
+- Tomašev, N., & Radovanović, M. (2016). Clustering evaluation in high-dimensional data. In *Unsupervised Learning Algorithms* (pp. 71–107). Springer.
+- Rousseeuw, P. J. (1987). Silhouettes: A graphical aid to the interpretation and validation of cluster analysis. *Journal of Computational and Applied Mathematics*, *20*, 53–65.
+- Hennig, C., Meila, M., Murtagh, F., & Rocci, R. (2015). *Handbook of cluster analysis* (1st ed.). Chapman and Hall/CRC.
+- Pyae, A., Low, Y.-C., & Chua, H. N. (2024). A combined distance metric approach with weight adjustment for improving mixed data clustering quality. In *2024 IEEE International Conference on Artificial Intelligence in Engineering and Technology (IICAIET)* (pp. 183–188). IEEE.
+- The MathWorks, Inc. (2025). *Statistics and Machine Learning Toolbox* (Version 24.2.0 [R2024b]). Natick, Massachusetts, United States.
+- José-García, A., & Gómez-Flores, W. (2023). CVIK: A Matlab-based cluster validity index toolbox for automatic data clustering. *SoftwareX*, *22*, 101359.
+- Ahmad, A., & Khan, S. S. (2019). Survey of state-of-the-art mixed data clustering algorithms. *IEEE Access*, *7*, 31883–31902.
