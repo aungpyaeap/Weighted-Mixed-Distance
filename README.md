@@ -23,6 +23,7 @@ disp(DIST);
 ```
 
 ## Experiment Results
+![Experiment workflow](Experiment-results/experiment-workflow.png)
 ![Single linkage clustering](Experiment-results/heatmap_single_linkage.png)
 ![Complete linkage clustering](Experiment-results/heatmap_complete_linkage.png)
 ![Average linkage clustering](Experiment-results/heatmap_average_linkage.png)
