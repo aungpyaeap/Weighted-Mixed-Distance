@@ -1,7 +1,7 @@
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)]()
 [![Best Paper Award](https://img.shields.io/badge/Best%20Paper%20Award-🏆-brightgreen)]()
 
-# Weighted Mixed Distance (WMD) for Mixed Data Clustering [`[paper]`](https://github.com/aungpyaeap)
+# Weighted Mixed Distance (WMD) [`[paper]`](https://github.com/aungpyaeap)
 
 **Paper title: A Distance Metric for Clustering Mixed Data Using Graph-Based Feature Influence Balancing Approach**
 
