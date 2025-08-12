@@ -1,4 +1,5 @@
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)]()
+[![Best Paper Award](https://img.shields.io/badge/Best%20Paper%20Award-🏆-brightgreen)]()
 
 # Weighted Mixed Distance [`[paper]`](https://github.com/aungpyaeap)
 
