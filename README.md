@@ -11,9 +11,8 @@ This repository presents the **Weighted Mixed Distance (WMD)** metric, an approa
 MATLAB code `wmd(X, W_R, W_C)` function returns $n \times n$ symmetric matrix.
 ```m
 dataPoints = readtable('medical-insurance.csv', VariableNamingRule='preserve');
-epsilon = 0.5;
-[weightNumerical, weightCategorical] = getweights(dataPoints, epsilon);
-DIST = wmd(dataPoints,weightNumerical, weightCategorical);
+[weightNumerical, weightCategorical] = getweights(dataPoints);
+DIST = wmd(dataPoints, weightNumerical, weightCategorical);
 disp(DIST);
 ```
 
