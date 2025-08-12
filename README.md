@@ -1,10 +1,19 @@
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)]()
 [![Best Paper Award](https://img.shields.io/badge/Best%20Paper%20Award-🏆-brightgreen)]()
 
-# Weighted Mixed Distance [`[paper]`](https://github.com/aungpyaeap)
+# Weighted Mixed Distance (WMD) for Mixed Data Clustering [`[paper]`](https://github.com/aungpyaeap)
 
 **Paper title: A Distance Metric for Clustering Mixed Data Using Graph-Based Feature Influence Balancing Approach**
 
+This repository presents the **Weighted Mixed Distance (WMD)** metric, an approach for clustering datasets containing both numerical and categorical features. WMD improves clustering quality by balancing feature influence using a graph-based unsupervised weighting mechanism.
+
+## Key features
+- **Mixed Data Support**: Handles datasets with both numerical and categorical features.
+- **Graph-Based Weighting**: Uses Laplacian scores to compute optimal weights for feature types.
+- **Improved Clustering Quality**: Demonstrated superior performance using Silhouette Index (SI) across multiple datasets.
+- **Integration with Hierarchical Clustering**: Compatible with various linkage methods (single, complete, average, weighted).
+
+## Methodology
 Let $\mathfrak{X}^{n \times m}, m:=m_R + m_C$ be a mixed dataset. The Weighted Mixed Distance (WMD) metric is defined as
 $$\text{WMD}(x_i, x_j) = \frac{1}{m} \left( w_R \sum_{k=1}^{m_R} d_{ijk} + w_C \sum_{k=1}^{m_C} d_{ijk} \right)$$
 
@@ -12,6 +21,8 @@ WMD satisfies the following conditions for any three data points $(x_i,x_j,x_k)$
 1. $\forall x_i \neq x_j, d(x_i,x_j) > 0, d(x_i,x_i) = 0$
 2. $d(x_i,x_j) = d(x_j,x_i)$
 3. $\forall x_k, d(x_i, x_j) \leq d(x_i, x_k) + d(x_k, x_j)$
+
+![Experiment workflow](Experiment-results/experiment-workflow.png)
 
 ## Usage
 MATLAB code `wmd(X, W_R, W_C)` function returns $n \times n$ symmetric matrix.
@@ -22,13 +33,6 @@ epsilon = 0.5;
 DIST = wmd(dataPoints,weightNumerical, weightCategorical);
 disp(DIST);
 ```
-
-## Experiment Results
-![Experiment workflow](Experiment-results/experiment-workflow.png)
-![Single linkage clustering](Experiment-results/heatmap_single_linkage.png)
-![Complete linkage clustering](Experiment-results/heatmap_complete_linkage.png)
-![Average linkage clustering](Experiment-results/heatmap_average_linkage.png)
-![Weighted linkage clustering](Experiment-results/heatmap_weighted_linkage.png)
 
 ## Citation
 Pyae, A., Low, Y. C., & Chua, H. N. (2024, August). A Combined Distance Metric Approach with Weight Adjustment For Improving Mixed Data Clustering Quality. In 2024 IEEE International Conference on Artificial Intelligence in Engineering and Technology (IICAIET) (pp. 183-188). IEEE.
