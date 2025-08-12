@@ -6,9 +6,7 @@
 **Paper title: A Distance Metric for Clustering Mixed Data Using Graph-Based Feature Influence Balancing Approach**
 
 Let $\mathfrak{X}^{n \times m}, m:=m_R + m_C$ be a mixed dataset. The Weighted Mixed Distance (WMD) metric is defined as
-\[
-\text{WMD}(x_i, x_j) = \frac{1}{m} \left( w_R \sum_{k=1}^{m_R} d_{ijk} + w_C \sum_{k=1}^{m_C} d_{ijk} \right)
-\]
+$$\text{WMD}(x_i, x_j) = \frac{1}{m} \left( w_R \sum_{k=1}^{m_R} d_{ijk} + w_C \sum_{k=1}^{m_C} d_{ijk} \right)$$
 
 WMD satisfies the following conditions for any three data points $(x_i,x_j,x_k)$.
 1. $\forall x_i \neq x_j, d(x_i,x_j) > 0, d(x_i,x_i) = 0$
