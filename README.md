@@ -5,13 +5,7 @@
 
 **Paper title: A Distance Metric for Clustering Mixed Data Using Graph-Based Feature Influence Balancing Approach**
 
-This repository presents the **Weighted Mixed Distance (WMD)** metric, an approach for clustering datasets containing both numerical and categorical features. WMD improves clustering quality by balancing feature influence using a graph-based unsupervised weighting mechanism.
-
-## Key features
-- **Mixed Data Support**: Handles datasets with both numerical and categorical features.
-- **Graph-Based Weighting**: Uses Laplacian scores to compute optimal weights for feature types.
-- **Improved Clustering Quality**: Demonstrated superior performance using Silhouette Index (SI) across multiple datasets.
-- **Integration with Hierarchical Clustering**: Compatible with various linkage methods (single, complete, average, weighted).
+This repository presents the **Weighted Mixed Distance (WMD)** metric, an approach for clustering datasets containing both numerical and categorical features. WMD improves clustering quality by adjusting feature influence using a graph-based unsupervised method.
 
 ![Experiment workflow](experiment-workflow.png)
 
