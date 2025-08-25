@@ -67,7 +67,7 @@ LS_Table.Normalized_LS = normalized_ls;
 LS_Table.R_Normalized_LS = 1 - normalized_ls;
 
 % Display the table
-disp(LS_Table);
+%disp(LS_Table);
 
 % Filter rows for numerical features
 numerical_rows = strcmp(LS_Table.Is_Numerical, 'True');
@@ -78,7 +78,7 @@ categorical_rows = strcmp(LS_Table.Is_Numerical, 'False');
 weightCategorical = mean(LS_Table.R_Normalized_LS(categorical_rows));
 
 % Display the results
-fprintf('W_R for numerical features: %.4f \n', weightNumerical);
-fprintf('W_C for categorical features: %.4f \n', weightCategorical);
+fprintf('W_R for numerical features: %.4f\n', weightNumerical);
+fprintf('W_C for categorical features: %.4f\n', weightCategorical);
 
 end
