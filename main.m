@@ -1,6 +1,4 @@
-clc;
-clear;
-close all;
+clc; clear; close all;
 
 set = {
     80.6, 1.85, "B+", "Teaching";
@@ -12,6 +10,13 @@ set = {
 points = cell2table(set, 'VariableNames', {'Weight_kg', 'Height_m', 'BloodGroup', 'Profession'});
 disp(points);
 
-[weightNumerical, weightCategorical] = getweights(points);
-D = wmd(points, weightNumerical, weightCategorical);
+% Compute distances
+[W_R, W_C, LS_Table] = getweights(points);
+D = wmd(points, W_R, W_C);
+disp("Distance matrix");
 disp(D);
+
+% Print weights and LS table
+fprintf('W_R for numerical features: %.4f\n', W_R);
+fprintf('W_C for categorical features: %.4f\n', W_C);
+disp(LS_Table);

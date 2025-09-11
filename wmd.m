@@ -1,6 +1,5 @@
-function distanceMatrix = wmd(X, weightNumerical, weightCategorical)
+function D = wmd(X, weightNumerical, weightCategorical)
 
-n = height(X);
 m = width(X);
 
 numFeatureIdx = varfun(@isnumeric, X, 'OutputFormat', 'uniform');
@@ -9,15 +8,9 @@ catFeatureIdx = varfun(@iscellstr, X, 'OutputFormat', 'uniform');
 numData = table2array(X(:, numFeatureIdx));
 catData = table2cell(X(:, catFeatureIdx));
 
-numDistances = sqrt(squareform(pdist(numData, 'cosine')));
+numDistances = sqrt(pdist2(numData, numData, @(XI, XJ) distfun(XI, XJ, 'cosine')));
+catDistances = pdist2(catData, catData, @(XI, XJ) distfun(XI, XJ, 'binary'));
 
-catDistances = zeros(n, n);
-for i = 1:n
-    for j = 1:n
-        catDistances(i, j) = sum(~strcmp(catData(i, :), catData(j, :)));
-    end
-end
-
-distanceMatrix = (weightNumerical * numDistances + weightCategorical * catDistances) / m;
+D = (weightNumerical * numDistances + weightCategorical * catDistances) / m;
 
 end

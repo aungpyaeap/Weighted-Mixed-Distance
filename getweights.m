@@ -1,4 +1,4 @@
-function [weightNumerical, weightCategorical] = getweights(X, epsilon)
+function [W_R, W_C, LS_Table] = getweights(X, epsilon)
 
 if nargin < 2
     epsilon = 0.5;
@@ -66,19 +66,12 @@ normalized_ls = (LS - min_ls) / (max_ls - min_ls);
 LS_Table.Normalized_LS = normalized_ls;
 LS_Table.R_Normalized_LS = 1 - normalized_ls;
 
-% Display the table
-%disp(LS_Table);
-
 % Filter rows for numerical features
 numerical_rows = strcmp(LS_Table.Is_Numerical, 'True');
-weightNumerical = mean(LS_Table.R_Normalized_LS(numerical_rows));
+W_R = mean(LS_Table.R_Normalized_LS(numerical_rows));
 
 % Filter rows for categorical features
 categorical_rows = strcmp(LS_Table.Is_Numerical, 'False');
-weightCategorical = mean(LS_Table.R_Normalized_LS(categorical_rows));
-
-% Display the results
-fprintf('W_R for numerical features: %.4f\n', weightNumerical);
-fprintf('W_C for categorical features: %.4f\n', weightCategorical);
+W_C = mean(LS_Table.R_Normalized_LS(categorical_rows));
 
 end
