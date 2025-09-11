@@ -7,10 +7,8 @@ end
 num_features = width(X);
 LS = zeros(num_features, 1);
 
-% Gower disance
+% Gower disance to similarity
 dist = gower(X);
-
-% Transform to Gower similarity
 S = 1 - dist;
 
 % Adjacency matrix using epsilon
@@ -41,37 +39,30 @@ for i = 1:size(X_encoded, 2)
     denominator = hat_F_i' * D * hat_F_i;
 
     LS(i) = numerator / denominator;
-
 end
 
 % Loop through each feature to determine its feature type
-is_numerical = cell(num_features, 1);
+is_numerical = false(num_features, 1); % Initialize as logical array
 for i = 1:num_features
     feature_name = X.Properties.VariableNames{i};
     if isnumeric(X.(feature_name))
-        is_numerical{i} = 'True';
+        is_numerical(i) = true; % Set to true (1) for numerical features
     else
-        is_numerical{i} = 'False';
+        is_numerical(i) = false; % Set to false (0) for non-numerical features
     end
 end
 
-% Make a table with feature indices and their corresponding Laplacian scores
-Feature_Index = (1:num_features)';
-LS_Table = table(Feature_Index, is_numerical, LS, 'VariableNames', {'Feature_Index', 'Is_Numerical', 'LS'});
+% A table with feature indices and their corresponding Laplacian scores
+LS_Table = table((1:num_features)', is_numerical, LS, 'VariableNames', {'Feature_Index', 'Is_Numerical', 'LS'});
 
-% Inverse normalize LS
-min_ls = min(LS);
-max_ls = max(LS);
-normalized_ls = (LS - min_ls) / (max_ls - min_ls);
+% Normalize LS and compute R_Normalized_LS
+normalized_ls = (LS - min(LS)) / (max(LS) - min(LS));
 LS_Table.Normalized_LS = normalized_ls;
 LS_Table.R_Normalized_LS = 1 - normalized_ls;
 
-% Filter rows for numerical features
-numerical_rows = strcmp(LS_Table.Is_Numerical, 'True');
-W_R = mean(LS_Table.R_Normalized_LS(numerical_rows));
+% Calculate means for numerical and categorical features
+W_R = mean(LS_Table.R_Normalized_LS(LS_Table.Is_Numerical));
+W_C = mean(LS_Table.R_Normalized_LS(~LS_Table.Is_Numerical));
 
-% Filter rows for categorical features
-categorical_rows = strcmp(LS_Table.Is_Numerical, 'False');
-W_C = mean(LS_Table.R_Normalized_LS(categorical_rows));
 
 end
