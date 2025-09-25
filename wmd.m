@@ -1,4 +1,4 @@
-function D = wmd(X, weightNumerical, weightCategorical)
+function D = wmd(X, WR, WC)
 
 m = width(X);
 
@@ -11,6 +11,6 @@ catData = table2cell(X(:, catFeatureIdx));
 numDistances = sqrt(pdist2(numData, numData, @(XI, XJ) distfun(XI, XJ, 'cosine')));
 catDistances = pdist2(catData, catData, @(XI, XJ) distfun(XI, XJ, 'binary'));
 
-D = (weightNumerical * numDistances + weightCategorical * catDistances) / m;
+D = (WR * numDistances + WC * catDistances) / m;
 
 end
