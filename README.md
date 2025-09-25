@@ -1,5 +1,5 @@
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)]()
-[![Best Paper Award](https://img.shields.io/badge/Best%20Paper%20Award-🏆-brightgreen)]()
+[![Best Paper Award](https://img.shields.io/badge/Best%20Paper%20Award-🏆-brightgreen)](https://ieeexplore.ieee.org/document/11167150)
 
 # Weighted Mixed Distance (WMD) [`[paper]`](https://ieeexplore.ieee.org/document/11167150)
 
