@@ -1,7 +1,7 @@
 [![contributions welcome](https://img.shields.io/badge/contributions-welcome-brightgreen.svg?style=flat)]()
 [![Best Paper Award](https://img.shields.io/badge/Best%20Paper%20Award-🏆-brightgreen)]()
 
-# Weighted Mixed Distance (WMD) [`[paper]`](https://github.com/aungpyaeap)
+# Weighted Mixed Distance (WMD) [`[paper]`](https://ieeexplore.ieee.org/document/11167150)
 
 **Paper title: A Distance Metric for Clustering Mixed Data Using Graph-Based Feature Influence Balancing Approach**
 
@@ -17,15 +17,14 @@ disp(D);
 
 ## Cite as
 ```bibtex
-@INPROCEEDINGS{10730392,
+@INPROCEEDINGS{11167150,
   author={Pyae, Aung and Low, Yeh-Ching and Chua, Hui Na},
-  booktitle={2024 IEEE International Conference on Artificial Intelligence in Engineering and Technology (IICAIET)}, 
-  title={A Combined Distance Metric Approach with Weight Adjustment For Improving Mixed Data Clustering Quality}, 
-  year={2024},
+  booktitle={2025 IEEE 7th Symposium on Computers & Informatics (ISCI)}, 
+  title={A Distance Metric for Clustering Mixed Data Using Graph-Based Feature Influence Balancing Approach}, 
+  year={2025},
   volume={},
   number={},
-  pages={183-188},
-  keywords={Measurement;Refining;Clustering algorithms;Learning (artificial intelligence);Complexity theory;Optimization;Distance Metrics;Mixed Data;Hierarchical Clustering;Unsupervised Learning},
-  doi={10.1109/IICAIET62352.2024.10730392}
-}
+  pages={59-64},
+  keywords={Measurement;Couplings;Laplace equations;Data analysis;Clustering methods;Indexes;Informatics;Unsupervised learning;Information integrity;clustering;similarity measure;mixed data;unsupervised learning},
+  doi={10.1109/ISCI65687.2025.11167150}}
 ```
