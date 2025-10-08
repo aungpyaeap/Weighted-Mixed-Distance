@@ -10,11 +10,10 @@ set = {
 points = cell2table(set, 'VariableNames', {'Weight_kg', 'Height_m', 'BloodGroup', 'Profession'});
 disp(points);
 
-[W_R, W_C, LS_Table] = getweights(points);
-D = wmd(points, W_R, W_C);
-disp("Distance matrix");
+[WR, WC, LS_Table] = FindWeights(points);
+D = wmd(points, WR, WC);
 disp(D);
 
-fprintf('W_R for numerical features: %.4f\n', W_R);
-fprintf('W_C for categorical features: %.4f\n', W_C);
 disp(LS_Table);
+fprintf('W_R for numerical features: %.4f\n', WR);
+fprintf('W_C for categorical features: %.4f\n', WC);

@@ -1,4 +1,4 @@
-function [W_R, W_C, LS_Table] = getweights(X, epsilon)
+function [WR, WC, LS_Table] = FindWeights(X, epsilon)
 
 if nargin < 2
     epsilon = 0.5;
@@ -48,7 +48,7 @@ normalized_ls = (LS - min(LS)) / (max(LS) - min(LS));
 LS_Table.Normalized_LS = normalized_ls;
 LS_Table.R_Normalized_LS = 1 - normalized_ls;
 
-W_R = mean(LS_Table.R_Normalized_LS(LS_Table.Is_Numerical));
-W_C = mean(LS_Table.R_Normalized_LS(~LS_Table.Is_Numerical));
+WR = mean(LS_Table.R_Normalized_LS(LS_Table.Is_Numerical));
+WC = mean(LS_Table.R_Normalized_LS(~LS_Table.Is_Numerical));
 
 end
