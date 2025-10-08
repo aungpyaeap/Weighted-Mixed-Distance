@@ -8,10 +8,10 @@
 This repository presents the **Weighted Mixed Distance (WMD)** metric, an approach for clustering datasets containing both numerical and categorical features. WMD improves clustering quality by adjusting feature influence using a graph-based unsupervised method.
 
 ## Example of use
-MATLAB code `wmd(points, W_R, W_C)` function returns $n \times n$ symmetric matrix.
+MATLAB code `wmd(points, WR, WC)` function returns $n \times n$ symmetric matrix.
 ```m
-[W_R, W_C, LS_Table] = getweights(points);
-D = wmd(points, W_R, W_C);
+[WR, WC, LS_Table] = getweights(points);
+D = wmd(points, WR, WC);
 disp(D);
 ```
 
